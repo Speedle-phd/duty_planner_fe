@@ -84,19 +84,17 @@ function App() {
          return employee
       })
 
-      const storageData = updatedEmployees.map((item) => {
-         return {
-            id: item.id,
-            duty: item.duty,
-         }
-      })
+      // const storageData = updatedEmployees.map((item) => {
+      //    return {
+      //       id: item.id,
+      //       duty: item.duty,
+      //    }
+      // })
       // setItem(DUTY_PLANNER_ITEMS_KEY, localStorageData)
       try {
-         
-         
-         const res = await axios.post(url, {
-            file: DUTY_PLANNER_FILE,
-            data: storageData,
+         const res = await axios.patch(url, {
+               id: activeId,
+               duty: overId,
          })
          if (res.status !== 200) {
             console.error('Error saving data to server:', res.data)
@@ -115,6 +113,9 @@ function App() {
       setLoading(true)
       try {
          const response = await axios.get(url, {
+            headers: {
+               'Content-Type': 'application/json',
+            },
             params: { file: DUTY_PLANNER_FILE },
          })
          if (response.status === 200) {
