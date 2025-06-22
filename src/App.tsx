@@ -50,6 +50,8 @@ export type Item = {
 
 export type DutyPlannerItem = Employee & Omit<Item, 'id'>
 
+const url = import.meta.env.VITE_URL!
+
 function App() {
    const [loading, setLoading] = useState<boolean>(false)
    const [width, setWidth] = useState<string>('')
@@ -90,7 +92,9 @@ function App() {
       })
       // setItem(DUTY_PLANNER_ITEMS_KEY, localStorageData)
       try {
-         const res = await axios.post(`http://localhost:5000/api/v1/fs`, {
+         
+         
+         const res = await axios.post(url, {
             file: DUTY_PLANNER_FILE,
             data: storageData,
          })
@@ -110,7 +114,7 @@ function App() {
    const fetchData = async () => {
       setLoading(true)
       try {
-         const response = await axios.get(`http://localhost:5000/api/v1/fs`, {
+         const response = await axios.get(url, {
             params: { file: DUTY_PLANNER_FILE },
          })
          if (response.status === 200) {
