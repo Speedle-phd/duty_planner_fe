@@ -1,0 +1,149 @@
+{
+   "employees": [
+      {
+         "id": 1,
+         "name": "Becker, Jutta",
+         "position": "PTA",
+         "freeDays" : [
+            "Wednesday"
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 2,
+         "name": "Bittermann, Julia",
+         "position": "PTA",
+         "freeDays" : [
+            "Tuesday",
+            "Thursday"
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 3,
+         "name": "Böhlein, Sonja",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 4,
+         "name": "Decker, Klaudia",
+         "position": "PTA",
+         "freeDays" : [
+            "Thursday",
+            "Friday"
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 5,
+         "name": "Eirich, Emanuel",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "true"
+      },
+      {
+         "id": 6,
+         "name": "Friedrich, Theresia",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 7,
+         "name": "Güttler, Wolfgang",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "true"
+      },
+      {
+         "id": 8,
+         "name": "Häfner, Franziska",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "true"
+      },
+      {
+         "id": 9,
+         "name": "Hermanson, Birgit",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 10,
+         "name": "Moritz, Michael",
+         "position": "PTA",
+         "freeDays" : [
+         
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 11,
+         "name": "Pluchow, Ilja",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "true"
+      },
+      {
+         "id": 12,
+         "name": "Müller, Jessica",
+         "position": "PTA",
+         "freeDays" : [
+            "Monday"
+         ],
+         "zytPc": "true"
+      },
+      {
+         "id": 13,
+         "name": "Puff, Annette",
+         "position": "PTA",
+         "freeDays" : [
+            "Thursday", "Friday"
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 14,
+         "name": "Zahner, Ute",
+         "position": "PTA",
+         "freeDays" : [
+            "Monday"
+         ],
+         "zytPc": "false"
+      }, {
+         "id": 15,
+         "name": "Dauer, Julia",
+         "position": "PTA",
+         "freeDays" : [
+            
+         ],
+         "zytPc": "false"
+      },
+      {
+         "id": 16,
+         "name": "Berger, Sabine",
+         "position": "PTA",
+         "freeDays" : [
+            "Wednesday", "Thursday", "Friday"
+         ],
+         "zytPc": "false"
+      }
+   ]
+}
