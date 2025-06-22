@@ -115,8 +115,7 @@ function App() {
          const response = await axios.get(url, {
             headers: {
                'Content-Type': 'application/json',
-            },
-            params: { file: DUTY_PLANNER_FILE },
+            }
          })
          if (response.status === 200) {
             const items = response.data
