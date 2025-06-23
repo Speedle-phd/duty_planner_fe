@@ -147,3 +147,10 @@
  }
 
 }
+
+@layer utilities {
+  .transition-height {
+      interpolate-size: allow-keywords;
+      transition: height 0.3s ease-in-out;
+  }
+}

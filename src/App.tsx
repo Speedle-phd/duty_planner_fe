@@ -173,7 +173,7 @@ function App() {
                <div className='loader'></div>
             </aside>
          ) : null}
-         <Card className='w-[clamp(20rem,95vw,100rem)] bg-white shadow-lg rounded-lg p-6'>
+         <Card className='w-[clamp(20rem,95vw,100rem)] bg-white shadow-lg rounded-lg p-6 min-h-[90dvh]'>
             <CardHeader>
                <h1 className='text-2xl font-bold text-center'>Duty Planner</h1>
             </CardHeader>
@@ -188,7 +188,7 @@ function App() {
                         <fieldset
                            key={duty}
                            style={{ width }}
-                           className={cn('border-1 rounded min-h-[20rem] py-4')}
+                           className={cn('border-1 rounded min-h-[30rem] py-4')}
                         >
                            <legend className='text-center text-[0.7rem]'>
                               {duty}

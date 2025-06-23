@@ -28,7 +28,7 @@ function Draggable({ id, name, position, freeDays, zytPc }: Props) {
          {...listeners}
          {...attributes}
       >
-         <Card className={cn('rounded-none px-2 min-h-20 hover:bg-gray-50 active:bg-gray-100 transition-colors', grabbed ? 'cursor-grabbing' : 'cursor-grab')}>
+         <Card className={cn('rounded-none px-2 hover:bg-gray-50 active:bg-gray-100 transition-colors', grabbed ? 'cursor-grabbing' : 'cursor-grab', "h-2 overflow-y-clip hover:h-auto transition-height")}>
             <div className='flex flex-col'>
                <h2 className='font-semibold'>{name}</h2>
                <p className='text-sm text-gray-500'>{position}</p>
