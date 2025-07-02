@@ -14,6 +14,7 @@ import data from './data/data.json'
 import Droppable from './components/Droppable'
 import Draggable from './components/Draggable'
 import axios from 'axios'
+
 const duties = [
    'Logistik',
    'Rezeptur',
@@ -23,6 +24,16 @@ const duties = [
    'Unit Dose',
    'Klin.Pharma.Dienst',
    'TBD',
+] as const
+const dutyPriority = [
+   1, //logistik
+   1, //rezeptur
+   2, //defektur
+   4, //analytik
+   3, //abrechnung/studien
+   2, //unit dose
+   2, //klin.pharma.dienst
+   null, //tbd
 ] as const
 
 // const DUTY_PLANNER_ITEMS_KEY = 'duty-planner-items'
@@ -183,13 +194,14 @@ function App() {
                onDragEnd={handleDragEnd}
             >
                <CardContent className='flex flex-col md:flex-row gap-4 md:gap-0'>
-                  {duties.map((duty) => {
+                  {duties.map((duty, index) => {
                      return (
                         <fieldset
                            key={duty}
                            style={{ width }}
-                           className={cn('border-1 rounded min-h-[30rem] py-4')}
+                           className={cn('border-1 rounded min-h-[30rem] py-4 relative')}
                         >
+                           {dutyPriority[index] && <aside className={cn("text-white font-bold absolute -top-1 -right-0 z-50 w-6 h-6 bg-amber-300 rounded-full flex justify-center items-center", dutyPriority[index] === 1 ? "bg-red-700" : dutyPriority[index] === 2 ? "bg-amber-300" : dutyPriority[index] === 3 ? "bg-green-700" : "bg-teal-500")}>{dutyPriority[index]}</aside>}
                            <legend className='text-center text-[0.7rem]'>
                               {duty}
                            </legend>
